@@ -18,7 +18,7 @@ maxColor = colorStrToArray(maxColor) || [0,255,0];	// green
 
 if(value>maxvalue) return upperMaxColor;
 if(value<minvalue) return underMinColor;
-const d = value/Math.abs(maxvalue-minvalue);
+const d = (value-minvalue)/Math.abs(maxvalue-minvalue);
 let r = Math.round(minColor[0]+(maxColor[0]-minColor[0])*d);
 let g = Math.round(minColor[1]+(maxColor[1]-minColor[1])*d);
 let b = Math.round(minColor[2]+(maxColor[2]-minColor[2])*d);
