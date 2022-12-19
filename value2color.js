@@ -16,8 +16,8 @@ function colorStrToArray(colorObj){
 minColor = colorStrToArray(minColor) || [255,0,0];	// red
 maxColor = colorStrToArray(maxColor) || [0,255,0];	// green
 
-if(value>maxvalue) return upperMaxColor;
-if(value<minvalue) return underMinColor;
+if(value>=maxvalue) return upperMaxColor;
+if(value<=minvalue) return underMinColor;
 const d = (value-minvalue)/Math.abs(maxvalue-minvalue);
 let r = Math.round(minColor[0]+(maxColor[0]-minColor[0])*d);
 let g = Math.round(minColor[1]+(maxColor[1]-minColor[1])*d);
