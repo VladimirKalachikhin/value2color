@@ -3,7 +3,7 @@ function value2color(value,minvalue=0,maxvalue=10,minColor,maxColor,underMinColo
 If value is between minvalue и maxvalue, then the color returns between minColor and maxColor.
 If value less them minvalue, then returns underMinColor.
 If value more than maxvalue, then returns upperMaxColor.
-minColor,maxColor - array [r,g.b] or html color string: rgb(r,g,b), #rrggbb
+minColor,maxColor - array [r,g.b] or html color string: rgb(r,g,b), #rrggbb 
 */
 function colorStrToArray(colorObj){
 	if(Array.isArray(colorObj) && colorObj.length == 3) return colorObj;
